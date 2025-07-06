@@ -1,0 +1,152 @@
+/* Layout and global font */
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f7f8fa;
+  color: #1c1e21;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  width: 100%;
+  max-width: 720px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Header */
+h2, h3, h4 {
+  font-weight: 600;
+  color: #2e2f30;
+  margin: 0.5em 0;
+  border-radius: 12px;
+}
+
+/* Buttons */
+button {
+  font-size: 15px;
+  border: none;
+  border-radius: 18px;
+  padding: 12px 22px;
+  background-color: #4fbc7b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(79,188,123,0.08);
+}
+
+button:hover {
+  background-color: #43a86a;
+}
+
+#btn-reset {
+  background-color: #e5e7eb;
+  color: #333;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+#btn-reset:hover {
+  background-color: #d1d5db;
+}
+
+/* Inputs and form elements */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1.5px solid #d1e7dd;
+  border-radius: 16px;
+  background-color: #f9fafb;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #4fbc7b;
+  box-shadow: 0 0 0 2px rgba(79,188,123,0.13);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+/* Symptom categories */
+.symptom-category {
+  background-color: #ffffff;
+  border: 1.5px solid #d1e7dd;
+  border-left: 6px solid #4fbc7b;
+  border-radius: 22px;
+  padding: 20px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 12px rgba(79,188,123,0.07);
+}
+
+/* Severity buttons */
+.severity-button-group {
+  margin: 8px 0 20px;
+  gap: 0.7em;
+}
+
+.severity-button-group button {
+  background-color: #e5f6ee;
+  color: #43a86a;
+  padding: 8px 14px;
+  margin-right: 8px;
+  border-radius: 50%;
+  font-weight: bold;
+  border: none;
+  font-size: 1.1em;
+  box-shadow: 0 1px 4px rgba(79,188,123,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.severity-button-group button.selected, .severity-button-group button:active {
+  background-color: #4fbc7b;
+  color: #fff;
+}
+
+.severity-button-group button:hover {
+  background-color: #b6e2c7;
+}
+
+/* 기타 동글동글 효과 */
+.symptom-item {
+  border-radius: 16px;
+  box-shadow: 0 1px 6px rgba(79,188,123,0.06);
+}
+
+.other-symptoms-section, .other-symptoms-input, .other-symptom-item {
+  border-radius: 14px;
+}
+
+.additional-info, .summary-section {
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(79,188,123,0.06);
+}
+
+.summary-section {
+  background: #fafcfb;
+  border: 1.5px solid #d1e7dd;
+}
